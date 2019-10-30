@@ -175,16 +175,15 @@ def _merge_pdf(input_files, output_file):
                 return -1
             # 顺序抽取的处理
             if left_range<=right_range:
-                # pages参数从0开始
+                # 调整为顺序pages range
                 begin_page = left_range - 1
                 end_page = right_range
                 merger.append(fileobj=input_handle, pages=(begin_page,end_page,1))
             # 逆序抽取的处理
             elif left_range>right_range:
-                # bug: 逆序抽取错误
-                # pages参数从0开始
-                begin_page = right_range - 1
-                end_page = left_range
+                # 调整为逆序pages range
+                begin_page = left_range - 1
+                end_page = right_range - 2
                 merger.append(fileobj=input_handle, pages=(begin_page,end_page,-1))
     # 写入输出文件
     print("[debug] writing {} ...".format(output_file))
