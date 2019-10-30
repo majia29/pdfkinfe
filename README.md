@@ -1,6 +1,6 @@
 # pdfkinfe
 
-pdf toolkit
+pdf toolkit to merge, split, compress, etc
 
 **merge pdf**
 
