@@ -1,0 +1,30 @@
+# system files
+.DS_Store
+Thumbs.db
+
+# ide files
+.vscode
+.git
+
+# compiled files
+*.class
+*.pyc
+
+# config files
+*.conf
+passwd.db
+
+# temporary files
+temp*.*
+*.log
+*.tmp
+*.bak
+*.old
+*.py_
+
+# etc
+venv/*
+pydoc/*
+temp/*
+sample/*
+
