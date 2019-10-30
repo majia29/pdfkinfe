@@ -21,6 +21,7 @@ temp*.*
 *.bak
 *.old
 *.py_
+*.pdf
 
 # etc
 venv/*
