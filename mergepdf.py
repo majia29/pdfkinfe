@@ -42,8 +42,8 @@ def _usage():
     """
     命令行说明
     """
-    print("usage: mergepdf.py mypdf1.pdf mypdf2.pdf <-o output.pdf>")
-    print("   or  mergepdf.py mypdf1.pdf mypdf2.pdf:1-200 <-o output.pdf>")
+    print("usage: mergepdf.py mypdf1.pdf mypdf2.pdf [-o output.pdf]")
+    print("   or  mergepdf.py mypdf1.pdf mypdf2.pdf:1-200 [-o output.pdf]")
     sys.exit(-100)
 
 def _input_parser(arg):
